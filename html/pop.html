@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C'Groovy - Pop Collection</title>
+    <link rel="stylesheet" href="/css/collection.css">
+    <link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+    <header class="header">
+        <a href="home.html" class="logo">C'Groovy</a>
+        
+        <nav class="nav">
+            <div class="dropdown">
+                <span class="dropdown-trigger">Collections ▼</span>
+                <div class="dropdown-menu">
+                    <a href="pop.html">Pop</a>
+                    <a href="rnb.html">R&B</a>
+                    <a href="kpop.html">K-Pop</a>
+                </div>
+            </div>
+            <a href="about.html" class="nav-link">About Us</a>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="/register.html" class="btn-ghost">Sign Up</a>
+            <a href="login.html" class="btn-primary">Sign In</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h1 class="main-title">Listen to our Collections</h1>
+
+        <div class="controls">
+            <div class="filter-tabs">
+                <button class="tab-btn active" onclick="navigateToPage('pop.html')">Pop</button>
+                <button class="tab-btn" onclick="navigateToPage('rnb.html')">R&B</button>
+                <button class="tab-btn" onclick="navigateToPage('kpop.html')">K-Pop</button>
+            </div>
+            <button class="sort-btn">Sort By</button>
+        </div>
+
+        <div class="cards-container">
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/pop1.jpeg" alt="Pop Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Upbeat and catchy pop song with modern production. Features infectious melodies and contemporary sound that appeals to mainstream audiences. Perfect for radio play and streaming platforms with its polished production quality.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Blinding Lights</h3>
+                    <p class="artist">The Weeknd</p>
+                    <p class="release-date">Release Date : 29/11/2019</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/pop2.jpg" alt="Pop Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Energetic pop anthem with powerful vocals and dynamic instrumentation. Combines electronic elements with traditional pop structure to create an unforgettable listening experience that resonates with diverse audiences.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Levitating</h3>
+                    <p class="artist">Dua Lipa</p>
+                    <p class="release-date">Release Date : 27/03/2020</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/pop3.jpeg" alt="Pop Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Chart-topping pop hit with memorable hooks and stellar production. Features layered harmonies and sophisticated arrangement that showcases the artist's vocal range and emotional depth in every verse and chorus.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Watermelon Sugar</h3>
+                    <p class="artist">Harry Styles</p>
+                    <p class="release-date">Release Date : 15/05/2020</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/pop4.jpg" alt="Pop Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Modern pop ballad with emotional lyrics and beautiful melody. Combines acoustic elements with electronic production to create a unique sound that bridges traditional and contemporary pop music styles perfectly.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>drivers license</h3>
+                    <p class="artist">Olivia Rodrigo</p>
+                    <p class="release-date">Release Date : 08/01/2021</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/pop5.jpg" alt="Pop Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Danceable pop track with infectious rhythm and catchy lyrics. Features modern production techniques and memorable melodies that make it perfect for both casual listening and dance floors worldwide.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>As It Was</h3>
+                    <p class="artist">Harry Styles</p>
+                    <p class="release-date">Release Date : 01/04/2022</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/pop6.jpg" alt="Pop Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Uplifting pop anthem with powerful message and soaring vocals. Combines inspirational lyrics with dynamic production to create an empowering musical experience that motivates and energizes listeners.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Good 4 U</h3>
+                    <p class="artist">Olivia Rodrigo</p>
+                    <p class="release-date">Release Date : 14/05/2021</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/pop7.jpg" alt="Pop Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Retro-inspired pop song with modern twist and nostalgic vibes. Features vintage synthesizers and contemporary vocals that create a perfect blend of past and present musical elements.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Stay</h3>
+                    <p class="artist">The Kid LAROI & Justin Bieber</p>
+                    <p class="release-date">Release Date : 09/07/2021</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/pop8.jpg" alt="Pop Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Emotional pop ballad with heartfelt lyrics and beautiful instrumentation. Showcases raw vocal talent and songwriting skills while maintaining commercial appeal and radio-friendly production quality.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Heat Waves</h3>
+                    <p class="artist">Glass Animals</p>
+                    <p class="release-date">Release Date : 29/06/2020</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/pop9.jpeg" alt="Pop Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">High-energy pop track with electronic influences and catchy hooks. Perfect for summer playlists with its upbeat tempo and feel-good vibes that instantly lift the mood and get people moving.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Anti-Hero</h3>
+                    <p class="artist">Taylor Swift</p>
+                    <p class="release-date">Release Date : 21/10/2022</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        © 2025 C'Groovy. All Rights Reserved.
+    </footer>
+
+    <script src="/js/collection.js"> </script>
+</body>
+</html>

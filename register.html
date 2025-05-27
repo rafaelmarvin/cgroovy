@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C'Groovy - Sign Up</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hero-section">
+            <div class="background-slider">
+                <div class="slide active" style="background-image: url('/asset/home1.jpeg')"></div>
+                <div class="slide" style="background-image: url('/asset/home2.jpeg')"></div>
+                <div class="slide" style="background-image: url('/asset/home3.jpeg')"></div>
+            </div>
+            
+            <div class="logo">
+                C'Groovy
+            </div>
+            
+            <div class="main-content">
+                <h1 class="main-heading">
+                    <span id="welcome-text">Welcome</span><br><br>
+                    Start listening your<br>
+                    favorites music.<br>
+                    <span class="right-now">Right Now!</span>
+                </h1>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-container">
+                <h2 class="form-title">Let's Get You Set Up!</h2>
+                
+                <form id="signupForm" class="signup-form">
+                    <!-- Username -->
+                    <div class="input-group">
+                        <input type="text" id="username" name="username" placeholder="Username" required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+
+                    <!-- Age -->
+                    <div class="input-group">
+                        <input type="number" id="age" name="age" placeholder="Age" min="13" max="120" required>
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="input-group">
+                        <label class="gender-label">Gender :</label>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="male" name="gender" value="male" required>
+                                <label for="male">Male</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="female" name="gender" value="female" required>
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="signup-btn">Sign Up</button>
+
+                    <p class="signin-link">
+                        Already have an account? <a href="/html/login.html">Sign In</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

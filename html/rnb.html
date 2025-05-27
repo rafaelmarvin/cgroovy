@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C'Groovy - R&B Collection</title>
+    <link rel="stylesheet" href="/css/collection.css">
+    <link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+    <header class="header">
+        <a href="home.html" class="logo">C'Groovy</a>
+        
+        <nav class="nav">
+            <div class="dropdown">
+                <span class="dropdown-trigger">Collections ▼</span>
+                <div class="dropdown-menu">
+                    <a href="pop.html">Pop</a>
+                    <a href="rnb.html">R&B</a>
+                    <a href="kpop.html">K-Pop</a>
+                </div>
+            </div>
+            <a href="about.html" class="nav-link">About Us</a>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="/register.html" class="btn-ghost">Sign Up</a>
+            <a href="login.html" class="btn-primary">Sign In</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h1 class="main-title">Listen to our Collections</h1>
+
+        <div class="controls">
+            <div class="filter-tabs">
+                <button class="tab-btn" onclick="navigateToPage('pop.html')">Pop</button>
+                <button class="tab-btn active" onclick="navigateToPage('rnb.html')">R&B</button>
+                <button class="tab-btn" onclick="navigateToPage('kpop.html')">K-Pop</button>
+            </div>
+            <button class="sort-btn">Sort By</button>
+        </div>
+
+        <div class="cards-container">
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/rnb1.jpg" alt="R&B Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Smooth R&B track with soulful vocals and rich harmonies. Features classic R&B instrumentation with modern production techniques, creating a timeless sound that appeals to both traditional and contemporary R&B fans.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Blinding Lights</h3>
+                    <p class="artist">The Weeknd</p>
+                    <p class="release-date">Release Date : 29/11/2019</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/rnb2.jpeg" alt="R&B Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Neo-soul masterpiece with intricate vocal arrangements and sophisticated chord progressions. Blends traditional R&B elements with contemporary production to create an emotionally rich and musically complex experience.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Golden</h3>
+                    <p class="artist">Jill Scott</p>
+                    <p class="release-date">Release Date : 15/07/2020</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/rnb3.jpeg" alt="R&B Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Sultry R&B ballad with passionate vocals and intimate lyrics. Features lush instrumentation and emotional depth that showcases the artist's vocal range and ability to convey raw emotion through music.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Best Part</h3>
+                    <p class="artist">Daniel Caesar ft. H.E.R.</p>
+                    <p class="release-date">Release Date : 25/08/2017</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/rnb4.jpeg" alt="R&B Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Contemporary R&B with funk influences and groove-heavy basslines. Combines classic soul elements with modern production techniques to create an irresistible rhythm that gets listeners moving.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Come Through and Chill</h3>
+                    <p class="artist">Miguel ft. J. Cole</p>
+                    <p class="release-date">Release Date : 30/09/2016</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/rnb5.jpeg" alt="R&B Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Silky smooth R&B track with jazz influences and sophisticated arrangements. Features beautiful vocal melodies and instrumental solos that create a luxurious listening experience perfect for late-night sessions.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Adorn</h3>
+                    <p class="artist">Miguel</p>
+                    <p class="release-date">Release Date : 07/08/2012</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/rnb6.jpeg" alt="R&B Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Powerful R&B anthem with gospel influences and uplifting message. Features soaring vocals and dynamic instrumentation that builds to an emotionally charged climax, perfect for inspiring and motivating listeners.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Focus</h3>
+                    <p class="artist">H.E.R.</p>
+                    <p class="release-date">Release Date : 05/05/2017</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/rnb7.jpeg" alt="R&B Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Alternative R&B with experimental production and unique vocal styling. Pushes the boundaries of traditional R&B while maintaining the genre's emotional core and melodic sensibilities.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Earned It</h3>
+                    <p class="artist">The Weeknd</p>
+                    <p class="release-date">Release Date : 23/12/2014</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/rnb8.jpeg" alt="R&B Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Classic R&B slow jam with romantic lyrics and sensual groove. Features traditional R&B instrumentation with modern production polish, creating the perfect soundtrack for intimate moments.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Sure Thing</h3>
+                    <p class="artist">Miguel</p>
+                    <p class="release-date">Release Date : 01/10/2010</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/rnb9.jpg" alt="R&B Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Soulful R&B ballad with heartfelt lyrics and emotional delivery. Showcases pure vocal talent with minimal production, allowing the raw emotion and musical storytelling to take center stage.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Location</h3>
+                    <p class="artist">Khalid</p>
+                    <p class="release-date">Release Date : 30/06/2016</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        © 2025 C'Groovy. All Rights Reserved.
+    </footer>
+
+    <script src="/js/collection.js"> </script>
+</body>
+</html>

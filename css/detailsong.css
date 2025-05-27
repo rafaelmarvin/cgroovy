@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #11121b;
+    color: white;
+    min-height: 100vh; /* Changed from height: 100vh */
+    /* Removed overflow: hidden */
+}
+
+.container {
+    position: relative;
+    min-height: 100vh; /* Changed from height: 100vh */
+    /* Removed overflow: hidden */
+}
+
+.background-img {
+    position: fixed; /* Changed from absolute to fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -2; /* Added z-index */
+}
+
+.overlay {
+    position: fixed; /* Changed from absolute to fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 18, 27, 0.75);
+    backdrop-filter: blur(2px);
+    z-index: -1; /* Added z-index */
+}
+
+.content {
+    position: relative;
+    z-index: 10;
+    min-height: 100vh; /* Changed from height: 100vh */
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+/* Artist Section */
+.artist-section {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    flex-shrink: 0;
+}
+
+.artist-card {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: rgba(30, 30, 46, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 500px;
+}
+
+.artist-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.artist-info {
+    flex: 1;
+}
+
+.song-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.artist-name {
+    color: #b5bdf8;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.album-name {
+    color: #adadad;
+    font-size: 0.9rem;
+}
+
+/* Audio Player Controls */
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 1rem 0;
+    flex-shrink: 0;
+}
+
+.control-btn {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control-btn:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.control-btn.active {
+    color: #b5bdf8;
+}
+
+.play-btn {
+    width: 3rem;
+    height: 3rem;
+    background: white;
+    color: #11121b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+}
+
+.play-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: scale(1.05);
+}
+
+/* Progress Bar */
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    flex-shrink: 0;
+}
+
+.time {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.7);
+    min-width: 2.5rem;
+}
+
+.progress-bar {
+    width: 16rem;
+    height: 0.25rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0.125rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.progress-fill {
+    height: 100%;
+    background: white;
+    border-radius: 0.125rem;
+    position: relative;
+    transition: width 0.1s;
+    width: 0%;
+}
+
+.progress-thumb {
+    position: absolute;
+    right: -0.375rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.75rem;
+    height: 0.75rem;
+    background: white;
+    border-radius: 50%;
+}
+
+/* Main Content */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    flex: 1;
+    margin-bottom: 1rem;
+    /* Removed min-height: 0 */
+}
+
+.panel {
+    background: rgba(30, 30, 46, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.song-info h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.release-date {
+    color: #adadad;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: #adadad;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+/* Lyrics Panel */
+.lyrics {
+    overflow: visible; /* Changed from hidden */
+}
+
+.lyrics-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+}
+
+.lyrics-container {
+    flex: 1;
+    /* Removed overflow-y: auto for mobile compatibility */
+    padding-right: 0.5rem;
+}
+
+.lyrics-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.lyrics-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+
+.lyrics-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+.lyrics-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.verse {
+    margin-bottom: 1.5rem;
+}
+
+.verse h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #b5bdf8;
+}
+
+.verse-content {
+    color: #adadad;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.verse-content p {
+    margin-bottom: 0.4rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #adadad;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+}
+
+/* Icons */
+.icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.icon-lg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0.5rem 0;
+    }
+    
+    .nav {
+        gap: 1rem;
+    }
+    
+    .player-controls {
+        gap: 1rem;
+    }
+    
+    .progress-bar {
+        width: 12rem;
+    }
+    
+    .content {
+        padding: 0 1rem;
+    }
+    
+    .artist-card {
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .artist-photo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .song-title {
+        font-size: 1.25rem;
+    }
+    
+    /* Enable scrolling for lyrics on mobile */
+    .lyrics-container {
+        max-height: none;
+        overflow-y: visible;
+    }
+}
+
+@media (max-width: 480px) {
+    .player-controls {
+        gap: 0.5rem;
+    }
+    
+    .play-btn {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    
+    .progress-bar {
+        width: 10rem;
+    }
+    
+    .panel {
+        padding: 1rem;
+    }
+    
+    .artist-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}

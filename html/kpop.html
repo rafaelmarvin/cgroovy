@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C'Groovy - K-Pop Collection</title>
+    <link rel="stylesheet" href="/css/collection.css">
+    <link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+    <header class="header">
+        <a href="home.html" class="logo">C'Groovy</a>
+        
+        <nav class="nav">
+            <div class="dropdown">
+                <span class="dropdown-trigger">Collections ▼</span>
+                <div class="dropdown-menu">
+                    <a href="pop.html">Pop</a>
+                    <a href="rnb.html">R&B</a>
+                    <a href="kpop.html">K-Pop</a>
+                </div>
+            </div>
+            <a href="about.html" class="nav-link">About Us</a>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="/register.html" class="btn-ghost">Sign Up</a>
+            <a href="login.html" class="btn-primary">Sign In</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <h1 class="main-title">Listen to our Collections</h1>
+
+        <div class="controls">
+            <div class="filter-tabs">
+                <button class="tab-btn" onclick="navigateToPage('pop.html')">Pop</button>
+                <button class="tab-btn" onclick="navigateToPage('rnb.html')">R&B</button>
+                <button class="tab-btn active" onclick="navigateToPage('kpop.html')">K-Pop</button>
+            </div>
+            <button class="sort-btn">Sort By</button>
+        </div>
+
+        <div class="cards-container">
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/kpop1.jpg" alt="K-Pop Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Energetic K-Pop anthem with powerful choreography and catchy hooks. Features dynamic vocals, rap verses, and electronic production that creates an explosive and addictive listening experience perfect for dancing.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Dynamite</h3>
+                    <p class="artist">BTS</p>
+                    <p class="release-date">Release Date : 21/08/2020</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/kpop2.png" alt="K-Pop Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Sophisticated K-Pop track with elegant vocals and polished production. Combines traditional Korean musical elements with modern pop sensibilities to create a unique and captivating sound that showcases artistic maturity.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>How You Like That</h3>
+                    <p class="artist">BLACKPINK</p>
+                    <p class="release-date">Release Date : 26/06/2020</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/kpop3.jpeg" alt="K-Pop Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Upbeat K-Pop dance track with infectious rhythm and memorable melodies. Features synchronized vocals, dynamic rap sections, and high-energy production that makes it impossible not to move to the beat.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Next Level</h3>
+                    <p class="artist">aespa</p>
+                    <p class="release-date">Release Date : 17/05/2021</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/kpop4.jpg" alt="K-Pop Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Emotional K-Pop ballad with heartfelt lyrics and beautiful harmonies. Showcases the vocal prowess and emotional range of the artists while maintaining the polished production quality that K-Pop is known for.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Spring Day</h3>
+                    <p class="artist">BTS</p>
+                    <p class="release-date">Release Date : 13/02/2017</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/kpop5.jpg" alt="K-Pop Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">High-energy K-Pop banger with fierce attitude and powerful performance. Features bold vocals, aggressive rap verses, and intense production that creates an empowering and confidence-boosting anthem.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Kill This Love</h3>
+                    <p class="artist">BLACKPINK</p>
+                    <p class="release-date">Release Date : 05/04/2019</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/kpop6.jpg" alt="K-Pop Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Innovative K-Pop track with experimental sounds and creative production. Pushes the boundaries of the genre while maintaining catchy melodies and impressive vocal performances that define modern K-Pop excellence.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>God's Menu</h3>
+                    <p class="artist">Stray Kids</p>
+                    <p class="release-date">Release Date : 17/06/2020</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/kpop7.jpeg" alt="K-Pop Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Dreamy K-Pop track with ethereal vocals and atmospheric production. Creates a magical listening experience with layered harmonies and sophisticated arrangements that transport listeners to another world.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Psycho</h3>
+                    <p class="artist">Red Velvet</p>
+                    <p class="release-date">Release Date : 23/12/2019</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/kpop8.jpg" alt="K-Pop Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Playful K-Pop song with quirky elements and fun choreography. Features colorful production, catchy hooks, and charming vocals that create a joyful and entertaining musical experience perfect for lifting spirits.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>TT</h3>
+                    <p class="artist">TWICE</p>
+                    <p class="release-date">Release Date : 24/10/2016</p>
+                </div>
+            </div>
+
+            <div class="music-card" onclick="navigateToCard()">
+                <div class="card-content">
+                    <img src="/asset/kpop9.jpg" alt="K-Pop Album cover" class="card-image">
+                    <div class="card-description">
+                        <p class="description-text">Futuristic K-Pop anthem with cutting-edge production and innovative sound design. Combines traditional K-Pop elements with electronic music influences to create a forward-thinking and trendsetting musical statement.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <h3>Savage</h3>
+                    <p class="artist">aespa</p>
+                    <p class="release-date">Release Date : 05/10/2021</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        © 2025 C'Groovy. All Rights Reserved.
+    </footer>
+
+    <script src="/js/collection.js"> </script>
+</body>
+</html>

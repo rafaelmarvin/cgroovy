@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C'Groovy - Music Player</title>
+    <link rel="stylesheet" href="/css/detailsong.css">
+    <link rel="stylesheet" href="/css/global.css">
+</head>
+<body>
+    <div class="container">
+        <img src="/asset/home2.jpeg" alt="Background" class="background-img">
+        <div class="overlay"></div>
+        
+        <audio id="audioPlayer" preload="metadata">
+            <source src="/asset/stay.mp3" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <div class="content">
+            <header class="header">
+                <a href="home.html" class="logo">C'Groovy</a>
+                
+                <nav class="nav">
+                    <div class="dropdown">
+                        <span class="dropdown-trigger">Collections ▼</span>
+                        <div class="dropdown-menu">
+                            <a href="pop.html">Pop</a>
+                            <a href="rnb.html">R&B</a>
+                            <a href="kpop.html">K-Pop</a>
+                        </div>
+                    </div>
+                    <a href="about.html" class="nav-link">About Us</a>
+                </nav>
+
+                <div class="auth-buttons">
+                    <a href="/register.html" class="btn-ghost">Sign Up</a>
+                    <a href="login.html" class="btn-primary">Sign In</a>
+                </div>
+            </header>
+
+            <div class="artist-section">
+                <div class="artist-card">
+                    <img src="/asset/pop7.jpg" alt="Artist Photo" class="artist-photo">
+                    <div class="artist-info">
+                        <h2 class="song-title">Stay</h2>
+                        <p class="artist-name">The Kid LAROI & Justin Bieber</p>
+                        <p class="album-name">Stay (Single)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="player-controls">
+                <button class="control-btn" id="shuffleBtn">
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4h6l4 4-4 4H4V4zm10 0h6v4h-6V4zm0 8h6v4h-6v-4z"></path>
+                    </svg>
+                </button>
+                
+                <button class="control-btn" id="prevBtn">
+                    <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                
+                <button class="play-btn" id="playBtn">
+                    <svg class="icon-lg" id="playIcon" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                    <svg class="icon-lg" id="pauseIcon" fill="currentColor" viewBox="0 0 24 24" style="display: none;">
+                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path>
+                    </svg>
+                </button>
+                
+                <button class="control-btn" id="nextBtn">
+                    <svg class="icon-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+                
+                <button class="control-btn" id="repeatBtn">
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="progress-container">
+                <span class="time" id="currentTime">0:00</span>
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill">
+                        <div class="progress-thumb"></div>
+                    </div>
+                </div>
+                <span class="time" id="totalTime">0:00</span>
+            </div>
+
+            <div class="main-content">
+                <div class="panel song-info">
+                    <h2>Song Information</h2>
+                    <p class="release-date">Release Date : 01/01/2025</p>
+                    
+                    <div class="description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique ultricies nulla aliquam interdum. Etiam ultrices non turpis vitae tempus. Nullam blandit porttitor purus, vitae aliquet velit euismod a. Cras ultrices interdum eleifend. Nulla vel sapien et nulla volutpat lobortis et sed nulla.
+                    </div>
+                </div>
+
+                <div class="panel lyrics">
+                    <h3 class="lyrics-title">Lyrics</h3>
+                    <div class="lyrics-container">
+                        <div class="verse">
+                            <h4>[Verse 1]</h4>
+                            <div class="verse-content">
+                                <p>まるで御伽の話</p>
+                                <p>終わり迎えた証</p>
+                                <p>長過ぎる旅路から</p>
+                                <p>切り出した一節</p>
+                                <p>それはかつてこの地に</p>
+                                <p>影を落とした悪を</p>
+                                <p>討ち取りし勇者との</p>
+                                <p>短い旅の記憶</p>
+                            </div>
+                        </div>
+
+                        <div class="verse">
+                            <h4>[Drop]</h4>
+                            <div class="verse-content">
+                                <p>(Ah-ah, ah)</p>
+                                <p>(Ah, ah)</p>
+                                <p>(Ah-ah, ah)</p>
+                                <p>(Ah-ah, ah)</p>
+                            </div>
+                        </div>
+
+                        <div class="verse">
+                            <h4>[Verse 2]</h4>
+                            <div class="verse-content">
+                                <p>物語は終わり</p>
+                                <p>勇者は眠りにつく</p>
+                                <p>新たな朝が来て</p>
+                                <p>世界は平和を取り戻す</p>
+                            </div>
+                        </div>
+
+                        <div class="verse">
+                            <h4>[Chorus]</h4>
+                            <div class="verse-content">
+                                <p>歌声が響く</p>
+                                <p>風に乗って</p>
+                                <p>遠い空へと</p>
+                                <p>届けよう</p>
+                            </div>
+                        </div>
+
+                        <div class="verse">
+                            <h4>[Bridge]</h4>
+                            <div class="verse-content">
+                                <p>時は流れて</p>
+                                <p>記憶は薄れても</p>
+                                <p>心に残る</p>
+                                <p>あの日の想い</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                © 2025 C'Groovy. All Rights Reserved.
+            </footer>
+        </div>
+    </div>
+
+    <script src="/js/detailsong.js"></script>
+</body>
+</html>
