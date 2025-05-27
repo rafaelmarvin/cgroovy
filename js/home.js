@@ -1,8 +1,8 @@
 // Auto-changing album images
 const albumImages = [
-    '/asset/home1.jpeg',
-    '/asset/home2.jpeg',
-    '/asset/home3.jpeg'
+    '/asset/banner5.jpg',
+    '/asset/banner2.jpeg',
+    '/asset/banner3.jpg',
 ];
 
 let currentAlbumIndex = 0;
@@ -30,23 +30,23 @@ const nextBtn = document.getElementById('nextBtn');
 const carouselData = [
     {
         title: 'Trending Hits',
-        image: '/asset/fiery.jpg'
+        image: '/asset/kpop1.jpg'
     },
     {
         title: 'Chill Vibes',
-        image: '/asset/howl.jpg'
+        image: '/asset/rnb1.jpg'
     },
     {
         title: 'Rock Classics',
-        image: '/asset/ponyo.jpg'
+        image: '/asset/rnb5.jpeg'
     },
     {
         title: 'Jazz Collection',
-        image: '/asset/samurai.png'
+        image: '/asset/pop1.jpeg'
     },
     {
         title: 'Electronic Beats',
-        image: '/asset/yurucamp.jpg'
+        image: '/asset/kpop2.png'
     }
 ];
 
